@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Vishal - Full Stack Developer</title>
+  <title>Vishal – Full-Stack Developer | UI/UX & Web Solutions Expert</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -41,25 +41,42 @@
   .section-title h2:after {background: #818921;}
   section, .section {padding-left: 40px;    padding-right: 40px;}
   .services .service-item .description {text-align: justify;}
+  
+  .our-client .img-grid .card {
+      height: 100%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border: none;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #f2f2f2;
+    }
 
+    .our-client .img-grid .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .our-client .img-grid img {
+      width: 100%;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 8px;
+    }
+
+    .image-caption {
+      margin-top: 0.75rem;
+      font-weight: 500;
+    }
   @media only screen and (max-width: 600px) {
-   .hero .container.aos-init.aos-animate{
-        margin: 10px !important;
-   }
-   .hero img {
-    position: absolute;
-    inset: inherit;
-    display: block;
-    width: auto;
-    height: 100%;
-    object-fit: cover;
-    /* z-index: 1; */
-    right: 0;
-}
-iframe {
-    border: 0;
-    display: none;
-}
+   .hero .container.aos-init.aos-animate{ margin: 10px !important;}
+   .hero img {position: absolute;inset: inherit;display: block;width: auto;height: 100%;object-fit: cover;right: 0;}
+    iframe {border: 0;display: none;}
   </style>
 </head>
 
@@ -91,7 +108,7 @@ iframe {
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <!-- <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li> -->
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li> 
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
         <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
@@ -125,7 +142,7 @@ iframe {
 
       <div class="container" data-aos="fade-up" data-aos-delay="100" style="margin: 100px;">
         <h2>Vishal Solanki</h2>
-        <p>I'm <span class="typed" data-typed-items="FullStack Developer, Frontend Expert, WordPress/Shopfiy Expert">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>I'm <span class="typed" data-typed-items="a FullStack Developer, Frontend Specialist, a WordPress/Shopfiy Expert"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
     </section><!-- /Hero Section -->
@@ -136,7 +153,7 @@ iframe {
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-        <p>With 8 years of experiences in the web development industry, I specialize in ReactJS, NextJS, WordPress and Shopify. I am committed to delivering high-quality solutions, and I'm passionate about keeping up with the latest technologies to provide the best results for my clients or company.</p>
+        <p>With over 8 years of experience in web development, I specialize in ReactJS, NextJS, WordPress, and Shopify. I’m dedicated to delivering high-quality solutions and continuously stay updated with the latest technologies to ensure the best outcomes for my clients and partners.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -278,12 +295,12 @@ iframe {
     </section><!-- /Resume Section -->
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background" style="display:none;">
+    <section id="portfolio" class="portfolio section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>A showcase of my Work in web & app development</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -292,22 +309,22 @@ iframe {
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
+            <li data-filter=".filter-app">UI/UX</li>
+            <li data-filter=".filter-product">Web Development</li>
+            <li data-filter=".filter-branding">Web Design</li>
+            <li data-filter=".filter-books">Mobile</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Alchemist and Magpie</h4>
+                  <p>Website Development + Maintenance</p>
+                  <a href="assets/img/portfolio/app-1.jpg" title="Alchemist and Magpie" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a target="_blank" href="https://alchemistandmagpie.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -316,46 +333,46 @@ iframe {
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Amaze Furniture</h4>
+                  <p>Website Customization + Maintenance</p>
+                  <a href="assets/img/portfolio/product-1.jpg" title="Amaze Furniture" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a target="_blank" href="https://waytorelax.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Matto</h4>
+                  <p>Website Design </p>
+                  <a href="assets/img/portfolio/branding-1.png" title="Matto" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>alliedlift - ForkLift Rental Service</h4>
+                  <p>Website Development + Maintenance</p>
+                  <a href="assets/img/portfolio/books-1.jpg" title="alliedlift - ForkLift Rental Service" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a target="_blank" href="https://alliedlift.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Thinknow Room</h4>
+                  <p>Website Development + Maintenance</p>
+                  <a href="assets/img/portfolio/app-2.jpg" title="Thinknow Room" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a target="_blank" href="https://thinknowroom.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -364,34 +381,34 @@ iframe {
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Cancer Support Community</h4>
+                  <p>Website Development + WordPress</p>
+                  <a href="assets/img/portfolio/product-2.jpg" title="Cancer Support Community" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a target="_blank" href="https://cancersupportswco.org/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Riaan Enterprise</h4>
+                  <p>Website Development + Maintenance</p>
+                  <a href="assets/img/portfolio/branding-2.jpg" title="Riaan Enterprise" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a target="_blank" href="https://riaanenterprise.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Autotroph iGaming</h4>
+                  <p>Website Development + Maintenance</p>
+                  <a href="assets/img/portfolio/books-2.jpg" title="Autotroph iGaming" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a target="_blank" href="https://autotrophig.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -400,22 +417,22 @@ iframe {
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Twin Buttes of Durango</h4>
+                  <p>Website Development</p>
+                  <a href="assets/img/portfolio/books-2.jpg" title="Twin Buttes of Durango" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a target="_blank" href="https://twinbuttesofdurango.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4>Ventura Interior</h4>
+                  <p>Logo Design</p>
                   <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="https://venturainterior.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -424,22 +441,22 @@ iframe {
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>The Power House</h4>
+                  <p>Website Design + Development</p>
+                  <a href="assets/img/portfolio/branding-3.jpg" title="The Power House" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a target="_blank" href="https://powsci.org/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Akuls Jewels</h4>
+                  <p>Website Development</p>
+                  <a href="assets/img/portfolio/books-3.jpg" title="Akuls Jewels" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a target="_blank" href="https://akulsjewels.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -514,6 +531,15 @@ iframe {
               <p class="description">I provide robust and reliable web hosting services at an affordable price, ensuring powerful hosting capabilities and 99.9% uptime for your website.</p>
             </div>
           </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">Maintenance and Support</a></h4>
+              <p class="description">Offer 24/7 server monitoring, security protection, and regular website backups & WordPress core, themes, and plugins stay up to date with expert care.</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
 
         </div>
 
@@ -625,6 +651,32 @@ iframe {
               </div>
             </div><!-- End testimonial item -->
 
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Working with Vishal has been a smooth and rewarding experience. He completely revamped our website Amaze – Way to Relax with modern design, faster performance, and better user experience. His knowledge of WordPress and frontend development is exceptional. Highly recommended for any web development work!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.png" class="testimonial-img" alt="">
+                <h3>Young India Impex</h3>
+                <h4>Founder</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Vishal transformed our outdated ThinkNowRoom website into a sleek and modern platform. His expertise in HTML, CSS, JavaScript, and advanced WordPress theme customization made a significant impact. He was also highly supportive and responsive throughout the process.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-6.png" class="testimonial-img" alt="">
+                <h3>Priya Kedia</h3>
+                <h4>Founder</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
             
 
           </div>
@@ -638,18 +690,18 @@ iframe {
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
-      </div><!-- End Section Title -->
+     
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
 
           <div class="col-lg-5">
-
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up" style="padding-bottom: 20px;">
+              <h2>Contact</h2>
+            </div><!-- End Section Title -->
+            
             <div class="info-wrap">
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
@@ -679,21 +731,81 @@ iframe {
             </div>
           </div>
 
-          <!-- <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
+           <div class="col-lg-7">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up" style="padding-bottom: 20px;">
+              <h2>Clients We Believe In</h2>
+            </div><!-- End Section Title -->
+            
+            <div class="info-wrap our-client">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 img-grid">
+                <!-- Repeat this block 16 times -->
+                <div class="col d-flex">
+                  <div class="card w-100">
+                    <img src="assets/img/clients/1.png" class="img-fluid rounded" alt="Image 1">
+                  </div>
+                </div>
+                <div class="col d-flex">
+                  <div class="card w-100">
+                    <img src="assets/img/clients/2.png" class="img-fluid rounded" alt="Image 1">
+                  </div>
+                </div>
+                <div class="col d-flex">
+                  <div class="card w-100">
+                    <img src="assets/img/clients/3.png" class="img-fluid rounded" alt="Image 1">
+                  </div>
+                </div>
+                <div class="col d-flex">
+                  <div class="card w-100">
+                    <img src="assets/img/clients/4.png" class="img-fluid rounded" alt="Image 1">
+                  </div>
+                </div>
+                <div class="col d-flex">
+                  <div class="card w-100">
+                    <img src="assets/img/clients/5.png" class="img-fluid rounded" alt="Image 1">
+                  </div>
+                </div>
+                <div class="col d-flex">
+                  <div class="card w-100">
+                    <img src="assets/img/clients/6.png" class="img-fluid rounded" alt="Image 1">
+                  </div>
+                </div>
+                <div class="col d-flex">
+                  <div class="card w-100">
+                    <img src="assets/img/clients/7.png" class="img-fluid rounded" alt="Image 1">
+                  </div>
+                </div>
 
-               <div class="social-links text-center">
-      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-    </div>
-
-              </div>
-            </form>
-          </div> -->
+                <div class="col d-flex">
+                  <div class="card w-100">
+                    <img src="assets/img/clients/8.png" class="img-fluid rounded" alt="Image 1">
+                  </div>
+                </div>
+                <div class="col d-flex">
+                  <div class="card w-100">
+                    <img src="assets/img/clients/1.svg" class="img-fluid rounded" alt="Image 1">
+                  </div>
+                </div>
+                <div class="col d-flex">
+                  <div class="card w-100">
+                    <img src="assets/img/clients/9.png" class="img-fluid rounded" alt="Image 1">
+                  </div>
+                </div>
+                <div class="col d-flex">
+                  <div class="card w-100">
+                    <img src="assets/img/clients/2.svg" class="img-fluid rounded" alt="Image 1">
+                  </div>
+                </div>
+                <div class="col d-flex">
+                  <div class="card w-100">
+                    <img src="assets/img/clients/10.png" class="img-fluid rounded" alt="Image 1">
+                  </div>
+                </div>
+                <!-- ... add more images up to 16 -->
+              </div> 
+               
+            </div>
+          </div> 
 
         </div>
 
